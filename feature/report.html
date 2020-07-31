@@ -243,7 +243,7 @@ function filter_table(elem) {
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 29-Jul-2020 at 20:14:29 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.1.1</p>
+    <p>Report generated on 31-Jul-2020 at 14:48:06 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.1.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -262,8 +262,8 @@ function filter_table(elem) {
         <td>Python</td>
         <td>3.8.3</td></tr></table>
     <h2>Summary</h2>
-    <p>4 tests ran in 3.76 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">4 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>8 tests ran in 9.55 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">8 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -277,48 +277,120 @@ function filter_table(elem) {
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">test_covid.py::test_ActiveCases[india]</td>
+          <td class="col-name">test_covid.py::test_CovidCasesAndRecovered[IN-2020-04-01]</td>
+          <td class="col-duration">1.13</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Status Code =  200
+Request URL =  https://covid19-api.org/api/status/IN?date=2020-04-01
+{&#x27;country&#x27;: &#x27;IN&#x27;, &#x27;last_update&#x27;: &#x27;2020-04-01T21:58:34&#x27;, &#x27;cases&#x27;: 1998, &#x27;deaths&#x27;: 58, &#x27;recovered&#x27;: 148}
+Total Cases in India as on 2020-04-01 = 1998
+Total Recovered in India as on 2020-04-01 = 148
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_covid.py::test_CovidCasesAndRecovered[IN-2020-05-01]</td>
+          <td class="col-duration">1.17</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Status Code =  200
+Request URL =  https://covid19-api.org/api/status/IN?date=2020-05-01
+{&#x27;country&#x27;: &#x27;IN&#x27;, &#x27;last_update&#x27;: &#x27;2020-05-01T23:32:36&#x27;, &#x27;cases&#x27;: 37257, &#x27;deaths&#x27;: 1223, &#x27;recovered&#x27;: 10007}
+Total Cases in India as on 2020-05-01 = 37257
+Total Recovered in India as on 2020-05-01 = 10007
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_covid.py::test_CovidCasesAndRecovered[IN-2020-06-01]</td>
+          <td class="col-duration">1.10</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Status Code =  200
+Request URL =  https://covid19-api.org/api/status/IN?date=2020-06-01
+{&#x27;country&#x27;: &#x27;IN&#x27;, &#x27;last_update&#x27;: &#x27;2020-06-01T23:33:03&#x27;, &#x27;cases&#x27;: 198370, &#x27;deaths&#x27;: 5608, &#x27;recovered&#x27;: 95754}
+Total Cases in India as on 2020-06-01 = 198370
+Total Recovered in India as on 2020-06-01 = 95754
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_covid.py::test_CovidCasesAndRecovered[IN-2020-07-01]</td>
+          <td class="col-duration">1.17</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Status Code =  200
+Request URL =  https://covid19-api.org/api/status/IN?date=2020-07-01
+{&#x27;country&#x27;: &#x27;IN&#x27;, &#x27;last_update&#x27;: &#x27;2020-07-01T23:33:53&#x27;, &#x27;cases&#x27;: 585493, &#x27;deaths&#x27;: 17400, &#x27;recovered&#x27;: 347979}
+Total Cases in India as on 2020-07-01 = 585493
+Total Recovered in India as on 2020-07-01 = 347979
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_covid.py::test_CovidCasesAndRecovered[IT-2020-04-01]</td>
+          <td class="col-duration">1.17</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Status Code =  200
+Request URL =  https://covid19-api.org/api/status/IT?date=2020-04-01
+{&#x27;country&#x27;: &#x27;IT&#x27;, &#x27;last_update&#x27;: &#x27;2020-04-01T21:58:34&#x27;, &#x27;cases&#x27;: 110574, &#x27;deaths&#x27;: 13155, &#x27;recovered&#x27;: 16847}
+Total Cases in Italy as on 2020-04-01 = 110574
+Total Recovered in Italy as on 2020-04-01 = 16847
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_covid.py::test_CovidCasesAndRecovered[IT-2020-05-01]</td>
           <td class="col-duration">1.11</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>Status Code=  200
-Request URL=  https://api.covid19api.com/country/india/status/confirmed/live?to=2020-04-01
-Total Active Cases in india=  1483156
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Status Code =  200
+Request URL =  https://covid19-api.org/api/status/IT?date=2020-05-01
+{&#x27;country&#x27;: &#x27;IT&#x27;, &#x27;last_update&#x27;: &#x27;2020-05-01T23:32:36&#x27;, &#x27;cases&#x27;: 207428, &#x27;deaths&#x27;: 28236, &#x27;recovered&#x27;: 78249}
+Total Cases in Italy as on 2020-05-01 = 207428
+Total Recovered in Italy as on 2020-05-01 = 78249
 <br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">test_covid.py::test_ActiveCases[italy]</td>
-          <td class="col-duration">0.75</td>
+          <td class="col-name">test_covid.py::test_CovidCasesAndRecovered[IT-2020-06-01]</td>
+          <td class="col-duration">1.13</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>Status Code=  200
-Request URL=  https://api.covid19api.com/country/italy/status/confirmed/live?to=2020-04-01
-Total Active Cases in italy=  246488
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Status Code =  200
+Request URL =  https://covid19-api.org/api/status/IT?date=2020-06-01
+{&#x27;country&#x27;: &#x27;IT&#x27;, &#x27;last_update&#x27;: &#x27;2020-06-01T23:33:03&#x27;, &#x27;cases&#x27;: 233197, &#x27;deaths&#x27;: 33475, &#x27;recovered&#x27;: 158355}
+Total Cases in Italy as on 2020-06-01 = 233197
+Total Recovered in Italy as on 2020-06-01 = 158355
 <br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">test_covid.py::test_RecoveredCases[india]</td>
-          <td class="col-duration">0.73</td>
+          <td class="col-name">test_covid.py::test_CovidCasesAndRecovered[IT-2020-07-01]</td>
+          <td class="col-duration">1.10</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>Status Code=  200
-Request URL=  https://api.covid19api.com/country/india/status/recovered/live?to=2020-04-01
-Total Recovered Cases in india=  952743
-<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test_covid.py::test_RecoveredCases[italy]</td>
-          <td class="col-duration">0.77</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>Status Code=  200
-Request URL=  https://api.covid19api.com/country/italy/status/recovered/live?to=2020-04-01
-Total Recovered Cases in italy=  198756
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Status Code =  200
+Request URL =  https://covid19-api.org/api/status/IT?date=2020-07-01
+{&#x27;country&#x27;: &#x27;IT&#x27;, &#x27;last_update&#x27;: &#x27;2020-07-01T23:33:53&#x27;, &#x27;cases&#x27;: 240760, &#x27;deaths&#x27;: 34788, &#x27;recovered&#x27;: 190717}
+Total Cases in Italy as on 2020-07-01 = 240760
+Total Recovered in Italy as on 2020-07-01 = 190717
 <br/></div></td></tr></tbody></table></body></html>

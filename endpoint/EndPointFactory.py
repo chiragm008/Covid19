@@ -1,14 +1,14 @@
 #Contains the host/server URI, Test Data and all the endpoints of the application
 
 class EndPoint:
-    Default = "https://api.covid19api.com/"
-    Status1 = "/status/confirmed/live"
-    Status2 = "/status/recovered/live"
+    BaseURI = "https://covid19-api.org/"
+    StatusByCountryAndDate = "api/status/"
+    Country = "api/country/"
 
 
 #TEST DATA
-    test_country = [("india"), ("italy")]
-    ToDate = {"to": "2020-04-01"}
+    CountryCode = [("IN"), ("IT")]
+    Date = [("2020-04-01"), ("2020-05-01"), ("2020-06-01"), ("2020-07-01")]
 
 
 
